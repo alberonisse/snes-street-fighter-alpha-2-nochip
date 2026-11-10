@@ -1,6 +1,6 @@
 # Street Fighter Alpha 2 Definitive Edition Super Nintendo: Raubkopie-Modul, nicht kaufen
 
-[Português](README.md) | [English](README.en.md) | [Español](README.es.md) | [Italiano](README.it.md) | [Deutsch](README.de.md) | [简体中文](README.zh-CN.md) | [日本語](README.ja.md) | [繁體中文（香港）](README.zh-HK.md)
+[Português](README.md) / [English](README.en.md) / [Español](README.es.md) / [Italiano](README.it.md) / [Deutsch](README.de.md) / [简体中文](README.zh-CN.md) / [日本語](README.ja.md) / [繁體中文（香港）](README.zh-HK.md)
 
 Dieses Projekt entstand aus einem sehr persönlichen Wunsch: **einer Community, die ich liebe, die mir unglaubliche Erlebnisse geschenkt hat und von der ich weit mehr bekommen habe, als ich je zurückgeben konnte, wenigstens ein kleines Stück zurückzugeben.**
 

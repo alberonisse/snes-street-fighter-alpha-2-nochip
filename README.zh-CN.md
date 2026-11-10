@@ -1,6 +1,6 @@
 # Street Fighter Alpha 2 Definitive Edition Super Nintendo：盗版卡带，请勿购买
 
-[Português](README.md) | [English](README.en.md) | [Español](README.es.md) | [Italiano](README.it.md) | [Deutsch](README.de.md) | [简体中文](README.zh-CN.md) | [日本語](README.ja.md) | [繁體中文（香港）](README.zh-HK.md)
+[Português](README.md) / [English](README.en.md) / [Español](README.es.md) / [Italiano](README.it.md) / [Deutsch](README.de.md) / [简体中文](README.zh-CN.md) / [日本語](README.ja.md) / [繁體中文（香港）](README.zh-HK.md)
 
 这个项目源于一个非常个人的愿望：**回馈一个我深爱的社区，哪怕只是微不足道的一点点。这个社区带给了我难以置信的经历，我从中得到的，远比我能回报的多得多。**
 

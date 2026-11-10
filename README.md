@@ -1,6 +1,6 @@
 # Street Fighter Alpha 2 Definitive Edition Super Nintendo: cartucho pirata, não compre
 
-[Português](README.md) | [English](README.en.md) | [Español](README.es.md) | [Italiano](README.it.md) | [Deutsch](README.de.md) | [简体中文](README.zh-CN.md) | [日本語](README.ja.md) | [繁體中文（香港）](README.zh-HK.md)
+[Português](README.md) / [English](README.en.md) / [Español](README.es.md) / [Italiano](README.it.md) / [Deutsch](README.de.md) / [简体中文](README.zh-CN.md) / [日本語](README.ja.md) / [繁體中文（香港）](README.zh-HK.md)
 
 Esse projeto nasceu de uma vontade muito pessoal: **retribuir, ainda que minimamente, a uma comunidade que eu amo, que me proporcionou experiências incríveis e da qual recebi muito mais do que jamais consegui devolver.**
 

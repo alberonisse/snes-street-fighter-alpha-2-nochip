@@ -10,6 +10,8 @@ plugins:
   - jekyll-readme-index
   - jekyll-titles-from-headings
   - jekyll-default-layout
+kramdown:
+  smart_quotes: ["apos", "apos", "quot", "quot"]
 relative_links:
   enabled: true
 titles_from_headings:

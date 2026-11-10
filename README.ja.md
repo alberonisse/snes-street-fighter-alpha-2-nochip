@@ -1,6 +1,6 @@
 # Street Fighter Alpha 2 Definitive Edition Super Nintendo：海賊版カートリッジ、買わないでください
 
-[Português](README.md) | [English](README.en.md) | [Español](README.es.md) | [Italiano](README.it.md) | [Deutsch](README.de.md) | [简体中文](README.zh-CN.md) | [日本語](README.ja.md) | [繁體中文（香港）](README.zh-HK.md)
+[Português](README.md) / [English](README.en.md) / [Español](README.es.md) / [Italiano](README.it.md) / [Deutsch](README.de.md) / [简体中文](README.zh-CN.md) / [日本語](README.ja.md) / [繁體中文（香港）](README.zh-HK.md)
 
 このプロジェクトは、とても個人的な願いから生まれました。それは、**私が愛し、素晴らしい経験を与えてくれ、自分が返せた以上のものをはるかに多く受け取ってきたコミュニティに、たとえわずかでも恩返しをすること**です。
 
