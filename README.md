@@ -1,159 +1,119 @@
-# Street Fighter Alpha 2 Definitive Edition Super Nintendo: cartucho pirata, não compre
+# CARTA ABERTA A GUSTAVO FRANCO
 
 [Português](README.md) / [English](README.en.md) / [Español](README.es.md) / [Italiano](README.it.md) / [Deutsch](README.de.md) / [简体中文](README.zh-CN.md) / [日本語](README.ja.md) / [繁體中文（香港）](README.zh-HK.md)
 
-Esse projeto nasceu de uma vontade muito pessoal: **retribuir, ainda que minimamente, a uma comunidade que eu amo, que me proporcionou experiências incríveis e da qual recebi muito mais do que jamais consegui devolver.**
+Pedido de esclarecimento, correção de atribuição e retratação
+11 de novembro de 2026
 
-Cópias não autorizadas deste projeto estão sendo vendidas pela loja **Retro-X Eletronics**, no site `retroxeletronics.com.br`, com o nome **"Street Fighter Alpha 2 Definitive Edition Super Nintendo"** e a chamada **"No Loads, No Special Chip"**. Se você chegou aqui procurando por esse nome ou por essa loja: esse cartucho é este projeto, e eu nunca autorizei a venda.
+Gustavo,
 
-**Antes de qualquer coisa: NÃO COMPREM ESSES CARTUCHOS PIRATAS. Eles não são produtos acabados e não existe uma versão final e livre de problemas para ser comercializada.**
+Criei este fork depois que você arquivou o repositório porque foi a única forma rápida e direta que encontrei de tentar fazer esta carta chegar até você o quanto antes.
 
-É importante entender uma coisa: a primeira versão jogável só foi concluída em 2026, e mesmo ela continuava recebendo correções de bugs de forma constante. As primeiras versões eram instáveis demais. Isso nunca foi escondido. Pelo contrário, fazia parte de um processo de desenvolvimento aberto, no qual membros da comunidade participavam ativamente dos testes, identificavam problemas, reportavam bugs e ajudavam a validar correções.
+Escrevo para contestar a atribuição publicada em seu repositório, que identifica os cartuchos mencionados na página como uma comercialização da sua implementação de Street Fighter Alpha 2 sem S-DD1.
 
-Portanto, qualquer pessoa que esteja vendendo cartuchos físicos desse projeto está comercializando uma versão de desenvolvimento como se fosse um produto acabado. **Nada garante que o cartucho que chega às suas mãos não traz justamente uma dessas versões instáveis.** E, com o projeto retirado do ar, nenhuma correção nova vai chegar: os bugs gravados naquele cartucho vão ficar nele para sempre.
+Minha declaração sobre a origem da edição é expressa: não aproveitei material do seu projeto na edição USA de 8 MiB com Shin Akuma e carregamento acelerado que forneci por meio da minha descompactação e dos patches preparados para memória 29LV640. Declaro que os cartuchos a que me refiro utilizam essa edição. Contesto a atribuição desses cartuchos ao seu projeto sem uma identificação técnica do conteúdo efetivamente utilizado.
 
-**Você não sabe qual versão foi gravada. Não sabe quais correções foram incorporadas. Não sabe quais bugs continuam presentes. E não tem como saber se o cartucho sequer vai funcionar corretamente.**
+Meu objetivo com esta carta é esclarecer a origem da edição em questão, explicar a trajetória do meu trabalho e solicitar que a atribuição pública seja sustentada por evidências verificáveis.
 
-Pode comprar um cartucho e encontrar glitches, travamentos, funcionalidades incompletas ou problemas que já haviam sido identificados e corrigidos em versões posteriores. Pode pagar mais caro que pagaria por um jogo original e receber algo que nunca foi validado como produto final.
+## 1. A TRAJETÓRIA DO MEU PROJETO
 
-E existe uma diferença fundamental aqui: quem utilizava o jogo em um flashcart participava de um processo colaborativo de desenvolvimento, testes e correção de problemas. Podia atualizar a versão, testar correções e contribuir diretamente para a evolução do projeto. Quem grava uma ROM em um cartucho e a coloca à venda não oferece absolutamente nada disso.
+Meu trabalho não começou com a disponibilização dos patches de 8 MiB. Houve um processo anterior de estudo do S-DD1, desenvolvimento de ferramentas, análise do mapeamento, montagem de placas, correções e testes em SNES real.
 
-**Não financiem esse mercado e não confundam uma versão de desenvolvimento com um jogo finalizado. Vocês podem estar pagando caro por algo que nunca deveria ter sido vendido como produto pronto.**
+O plano original envolvia uma PCB com CPLD, destinada a controlar o acesso aos dados e preservar os detalhes da implementação. Não pretendia disponibilizar abertamente toda essa estrutura de descompactação, organização dos dados e reconstrução.
 
-## Pirataria é crime
+Quando tomei conhecimento da publicação do seu projeto, fiquei profundamente desmotivado. Passei a considerar comprometido o diferencial do trabalho no qual vinha investindo tempo e esforço. Essa foi a minha percepção sobre o futuro do meu projeto.
 
-Vender cópias de jogos sem autorização de quem detém os direitos é pirataria, e pirataria é crime no Brasil. O artigo 184, parágrafo 2º, do Código Penal prevê reclusão de 2 a 4 anos e multa para quem vende ou expõe à venda, com intuito de lucro, cópia de obra reproduzida com violação do direito de autor.
+Foi nesse contexto que decidi mudar de direção e disponibilizar privadamente a descompactação e os patches da edição de 8 MiB, para dar continuidade ao trabalho já realizado. Essa decisão não autoriza identificar automaticamente a edição que forneci como uma versão do seu repositório.
 
-Isso vale para os jogos das empresas que os criaram e vale também para o meu trabalho. Street Fighter Alpha 2 é um jogo da Capcom. As alterações que eliminam os carregamentos e dispensam o chip especial são o meu trabalho. Eu nunca autorizei ninguém a vender cartuchos com elas.
+## 2. COMO FUNCIONA MINHA ABORDAGEM DE DESCOMPACTAÇÃO
 
-## O anúncio
+No núcleo original do sdd1_unpacker, estudei e isolei a implementação do S-DD1 existente no bsnes. Os créditos do código foram preservados: Andreas Naive pelo algoritmo/implementação original e byuu pelo port do bsnes. Não reivindico a invenção do algoritmo S-DD1.
 
-Captura do anúncio feita em 2026-11-10, às 14:12 GMT. Os números marcam os detalhes listados abaixo. Os logotipos da loja estão levemente desfocados; o nome da loja está escrito neste texto.
+Esse código foi adaptado para uma ferramenta C++ independente da interface gráfica e do funcionamento completo do emulador, com leitura validada dos dados da ROM e tratamento dos bancos de memória do S-DD1.
 
-![Página do anúncio da Retro-X Eletronics, com seis detalhes numerados](assets/evidence/overview.png)
+O jogo não trata a ROM inteira como um único arquivo compactado. Ele solicita fluxos específicos, normalmente durante transferências DMA. Por isso, o trabalho envolveu analisar descritores e tabelas da ROM original, registrar solicitações realizadas durante a execução e consolidar origem, tamanho e configuração dos bancos de memória.
 
-1. Título: "Street Fighter Alpha 2 Definitive Edition Super Nintendo", seguido de "No Loads, No Special Chip".
+O trace canônico da reconstrução histórica possui 3.155 identidades de requests em 3.160 linhas. As cinco linhas adicionais registram evidências de outros pontos de chamada para pedidos já catalogados. Requests observados e entradas inferidas estaticamente são classificados separadamente; essa contagem não significa 3.155 fluxos comprimidos distintos nem prova, por si só, cobertura de todas as situações do jogo.
 
-   ![Título e faixa de preço do anúncio](assets/evidence/1-title-price.png)
+A cadeia do núcleo original foi estruturada como: ROM original USA, análise e traces, catálogo de requests, descompactação dos dados, organização em um novo layout, patches de DMA e verificações da reconstrução sem S-DD1.
 
-2. Preço: de R$ 200,00 a R$ 250,00. O "Produto completo com caixa, berço e manual" sai por R$ 250,00, com "7 dias para trocas e devoluções e 3 meses de garantia".
+Essa reconstrução exigiu distinguir endereço da CPU de offset no arquivo, respeitar as regiões de ROM do SNES e redirecionar as rotinas tratadas para dados já descompactados. Não se resume a aumentar o arquivo ou mudar seu cabeçalho.
 
-   ![Conjunto completo por R$ 250,00, com a promessa de 7 dias para trocas e 3 meses de garantia](assets/evidence/2-buy-box.png)
+## 3. A ADAPTAÇÃO DE 8 MiB E A PLACA SIMPLES
 
-3. Caixa: a frente traz "The Definitive Edition, No Loading Times & More on Super NES!".
+A linha de 8 MiB deve ser distinguida do núcleo anterior de reconstrução de 16 MiB. Ela passou por outro processo de organização e alocação, utilizando um inventário extraído da base 16mb que realizei os testes e postei no youtube, além de correções e verificações posteriores. Não a apresento como um simples recorte do arquivo de 16 MiB.
 
-   ![Frente da caixa com a frase The Definitive Edition, No Loading Times & More on Super NES!](assets/evidence/3-box.png)
+A edição foi preparada para uma placa simples, com as ligações adequadas e uma única memória Flash TSOP48 de 8 MiB, a 29LV640 em modo x8. Essa edição não exige S-DD1 ou CPLD para funcionar nessa configuração e foi testada em SNES real. Também houve preparação da variante para placa LoROM modificada.
 
-4. Cartucho: a etiqueta traz o código `SNS-AUZE-USA` e "Made in Japan". Nenhum cartucho deste projeto foi fabricado no Japão. O mesmo código aparece no manual.
+Existe uma diferença objetiva em relação à conversão histórica de 12 MiB documentada no seu projeto. Essa imagem de 12 MiB não pode ser simplesmente gravada na 29LV640 de 8 MiB e utilizada na configuração que demonstrei. Seu próprio relato técnico descreve um mapeamento específico, incluindo uma janela nos bancos C0-FF:
 
-   ![Etiqueta do cartucho com SNS-AUZE-USA e Made in Japan](assets/evidence/4-cartridge.png)
+https://github.com/snes9xgit/snes9x/issues/1081
 
-5. Nota nas fotos: "Jogo totalmente compatível com videogame bloqueado e desbloqueado".
+Não estou afirmando que sua implementação jamais possa ser adaptada para um cartucho físico, nem negando os testes em hardware que você documentou. Estou distinguindo uma imagem de 12 MiB e seu mapeamento da edição de 8 MiB preparada para a minha configuração de placa.
 
-   ![Nota nas fotos: jogo totalmente compatível com videogame bloqueado e desbloqueado](assets/evidence/5-compatibility.png)
+Se a proposta é ampliar o acesso ao jogo, considero importante reconhecer também esse caminho: permitir que pessoas utilizem uma placa simples e componentes acessíveis, sem precisar adquirir um flashcart específico. Já havia registrado uma placa de testes utilizada nesse trabalho; o vídeo consta na relação ao final desta carta.
 
-6. Opções: "Completo" ou "Apenas Cartucho", com extras pagos: acetato para caixa, acabamento holográfico, dust cover e pôster A3.
+## 4. CRÉDITOS E PRECISÃO
 
-   ![Opções do anúncio e extras pagos](assets/evidence/6-options.png)
+A presente contestação se refere especificamente à edição USA de 8 MiB utilizada nos cartuchos mencionados. A origem dessa edição deve ser examinada a partir dos arquivos efetivamente utilizados, de seus patches e de sua proveniência. Não deve ser presumida a partir de inventários de outra região ou de revisões de pesquisa separadas, nem da simples semelhança entre os recursos anunciados.
 
-7. Descrição, mais abaixo na página: anuncia a "eliminação dos tempos de carregamento antes das lutas" e uma "ROM expandida que dispensa o chip especial S-DD1". É exatamente o que este projeto faz.
+Não reivindico autoria exclusiva do algoritmo público, de rotinas de terceiros ou dos dados do jogo original. Reivindico o reconhecimento correto do trabalho de integração, adaptação, correção e validação realizado na edição que forneci.
 
-   ![Descrição do anúncio, com a eliminação dos carregamentos e a ROM sem o chip S-DD1](assets/evidence/7-description.png)
+## 5. REGISTROS PÚBLICOS PARA CONFERÊNCIA DA CRONOLOGIA
 
-O mesmo produto pode aparecer em outras lojas, no Mercado Livre, na Shopee ou em grupos de Facebook, com outro nome. Os detalhes 3, 4 e 5 identificam o cartucho em qualquer anúncio.
+Apresento os registros abaixo para que conteúdo e datas de publicação possam ser confrontados com o histórico das versões. Eles documentam a trajetória que estou relatando; não substituem a comparação dos arquivos efetivamente usados no cartucho.
 
-**"Definitive Edition" é um nome inventado pelo vendedor. Nunca existiu uma edição definitiva deste projeto: quando ele foi retirado do ar, ainda recebia correções.**
+Placa simples de testes:
+https://www.youtube.com/shorts/EVQoQB8mD1A
 
-### Registro da captura
+Registro complementar 1:
+https://www.youtube.com/shorts/uhzHfQFPbVw
 
-| Campo | Valor |
-|---|---|
-| Loja | Retro-X Eletronics |
-| Endereço | `https://retroxeletronics.com.br/produto/street-fighter-alpha-2-definitive-edition-super-nintendo-no-loads-no-special-chip/` |
-| Data | 2026-11-10 14:12:34 GMT |
-| Método | Chromium headless, janela de 1440x900, escala 2 |
-| SHA-256 da captura da tela | `cb085b0749899e7b31aa1b2e0bdc4faa991862e6fd337b7d5cc7c3544cc0ca78` |
-| SHA-256 da página inteira | `6494f6917982b36425032cfd3b15095de6822c12948f93118a1e76707c5045e3` |
-| SHA-256 do PDF da página | `bf64a3c0718ca29ca92989778df28a546d0163fb65ea0f9b73430b114ed9dee5` |
+Registro complementar 2:
+https://www.youtube.com/shorts/23gS_IEGDqc
 
-Os arquivos originais, sem desfoque e com essas somas, estão guardados comigo.
+Transmissão relacionada ao projeto:
+https://www.youtube.com/live/zakojPNeGc0
 
-## Perguntas frequentes
+Registro complementar 3:
+https://www.youtube.com/shorts/PXVAKPfAO1E
 
-### Esse cartucho é oficial ou autorizado?
+Registro complementar 4:
+https://www.youtube.com/shorts/y8PAzIzPz1I
 
-Não. Eu nunca autorizei nenhuma loja a vender cartuchos deste projeto.
+Registro complementar 5:
+https://www.youtube.com/shorts/bStb8AW_QzQ
 
-### Existe uma "Definitive Edition" deste projeto?
+Registro complementar 6:
+https://www.youtube.com/shorts/if26BECUllI
 
-Não. Esse nome foi criado pelo vendedor.
+Etapa com PCB e CPLD:
+https://www.youtube.com/shorts/X-Hby6Vw-m4
 
-### O cartucho vai receber atualizações?
+Vídeo que publiquei antes da preparação e do compartilhamento privado dos patches de 8 MiB:
+https://www.youtube.com/shorts/YZbpycbEW0w
 
-Não. O projeto foi retirado do ar e não haverá novas versões. Os bugs gravados no cartucho ficam nele para sempre.
+Demonstração posterior do jogo em placa simples com a 29LV640:
+https://www.youtube.com/shorts/GKl1eOMFks0
 
-### O vendedor consegue corrigir os bugs?
+Meu esclarecimento dirigido a você:
+https://youtu.be/8X8jRSXFb5I
 
-Não há de onde vir correção. As correções saíam do desenvolvimento aberto deste projeto, que foi encerrado.
+## 6. O QUE SOLICITO
 
-### Qual versão está gravada no cartucho?
+A publicação à qual me refiro está em:
+https://github.com/gufranco/snes-street-fighter-alpha-2-nochip
 
-Não há como saber pelo anúncio. Pode ser qualquer uma, inclusive uma das primeiras, que eram instáveis demais.
+Solicito que esclareça qual arquivo foi examinado, qual seu hash, de qual cartucho ele foi obtido e quais elementos técnicos sustentaram a atribuição à sua implementação.
 
-### Já comprei. O que eu faço?
+Também solicito que a comparação considere o mapeamento físico, as rotinas, os patches e a revisão concreta, em vez de tomar como prova apenas a descrição comercial ou a presença de recursos como Shin Akuma e carregamento acelerado.
 
-Se a compra foi feita pela internet no Brasil, o artigo 49 do Código de Defesa do Consumidor garante o direito de desistir em até 7 dias a partir do recebimento, com devolução integral do valor pago. O próprio anúncio promete "7 dias para trocas e devoluções". Veja abaixo como denunciar.
+Enquanto essa identificação permanecer contestada e sem demonstração técnica apresentada, peço que a publicação deixe essa condição explícita e retire a atribuição categórica. Confirmado o equívoco, solicito a correção das publicações e uma retratação com visibilidade equivalente à exposição original.
 
-## Como denunciar
+Respeito o seu trabalho e solicito que você respeite o meu também. Não pretendo promover ataques pessoais ou diminuir sua dedicação.
 
-Quem comprou um desses cartuchos e se sentiu lesado, ou quem perdeu este projeto por causa desse comércio, pode e deve denunciar. Antes de começar, guarde o anúncio, o comprovante de pagamento, as conversas com o vendedor e fotos do produto.
+A questão que apresento é objetiva: a origem de uma implementação precisa ser demonstrada. Um resultado semelhante, um nome de anúncio ou uma embalagem não substituem a análise do conteúdo efetivamente utilizado.
 
-### No Brasil
+Atenciosamente,
 
-- Polícia: registre um boletim de ocorrência, na delegacia ou pela delegacia virtual do seu estado. A venda de cópias piratas é crime de ação penal pública incondicionada, conforme o artigo 186 do Código Penal: qualquer pessoa pode comunicar o fato, mesmo sem ter comprado.
-- Consumidor: registre reclamação no Procon do seu estado e em [consumidor.gov.br](https://www.consumidor.gov.br). Se a compra foi pela internet, peça a devolução em até 7 dias do recebimento, pelo artigo 49 do Código de Defesa do Consumidor.
-- Pagamento: se pagou com cartão, peça ao banco emissor a contestação da compra.
-- Plataformas: denuncie o anúncio como venda de produto pirata no Mercado Livre, na Shopee, no Instagram, no Facebook ou onde ele aparecer.
-- Detentor dos direitos: informe a Capcom, dona do jogo, pelos canais oficiais dela.
-
-### Fora do Brasil
-
-- Procure o órgão de defesa do consumidor do seu país e informe que a compra foi feita de uma loja brasileira.
-- Se pagou com cartão ou PayPal, abra uma contestação com o emissor do cartão ou com o PayPal.
-- Denuncie o anúncio na plataforma em que ele aparecer.
-- Onde a pirataria for crime, registre a ocorrência na polícia local.
-- Informe a Capcom pelos canais oficiais dela.
-
-## Por que o projeto foi retirado do ar
-
-Foram seis anos de trabalho, desde o início da pandemia, em 2020, até a conclusão da primeira versão jogável, em 2026. Seis anos de pesquisa, desenvolvimento, experimentação e inúmeras horas investidas em algo que nunca teve como objetivo gerar lucro. Foi uma contribuição que fiz porque queria fazer, porque acreditava na comunidade e porque queria entregar algo realmente útil.
-
-Vou deixar uma coisa muito clara: **este projeto nunca foi criado para alimentar o mercado de pirataria comercial.** Muito menos para servir de ferramenta a quem transforma o trabalho alheio em oportunidade de negócio, comercializando cópias não autorizadas de jogos sob o eufemismo conveniente de "reproduções".
-
-Conhecemos esse mercado. Produtos de qualidade duvidosa, frequentemente vendidos por valores superiores aos de exemplares originais, explorando justamente a paixão de uma comunidade que deveria ser respeitada.
-
-O projeto sempre foi integralmente open source, incluindo seu toolkit. Seu propósito era simples e tecnicamente muito específico: permitir que os jogos fossem executados em flashcarts acessíveis, incorporando todas as melhorias que consegui desenvolver, sem exigir hardware adicional, dispositivos proprietários ou qualquer solução baseada em FPGA.
-
-**E eu entreguei exatamente isso.**
-
-O código de conduta não estava ali por acaso. Ele existia justamente para estabelecer limites, proteger a comunidade e deixar explícito o tipo de uso que eu considerava aceitável.
-
-Infelizmente, existem relatos e evidências de que meu trabalho está sendo comercializado no Brasil sem autorização, com a atividade disfarçada sob o conveniente rótulo de cartuchos de "reprodução".
-
-Quem faz isso é exatamente o tipo de gente que este projeto nunca pretendeu beneficiar. Pessoas que não contribuíram com o desenvolvimento, não respeitaram suas condições de uso e enxergaram no trabalho de outra pessoa apenas uma oportunidade de ganhar dinheiro.
-
-Diante disso, tomei uma decisão: o projeto foi retirado do ar. Não haverá mais suporte, novas disponibilizações ou lançamentos. Isso inclui material que já estava concluído e aguardava apenas a publicação, após os últimos testes.
-
-Não vou continuar investindo meu tempo, conhecimento e trabalho para, no fim, fornecer gratuitamente matéria-prima para um mercado que contraria frontalmente os princípios que motivaram a criação deste projeto.
-
-É profundamente decepcionante chegar a esse ponto depois de seis anos de dedicação. Mas minha disposição de contribuir com a comunidade não significa que eu tenha obrigação de tolerar a exploração comercial do meu trabalho.
-
-**Meu trabalho foi oferecido à comunidade. Não ao mercado de cartuchos piratas. Não confundam generosidade com autorização para explorar o trabalho dos outros.**
-
-Aos que contribuíram positivamente, compartilharam conhecimento e respeitaram a proposta original: meu sincero agradecimento.
-
-Quanto aos que decidiram transformar isso em negócio, espero que entendam que suas escolhas têm consequências.
-
-**Agradeçam a quem decidiu transformar uma contribuição gratuita à comunidade em um negócio de pirataria. Vocês sabem quem são.**
-
-Eu sei o tempo que investi nisso. Sei o que entreguei e, principalmente, sei por que fiz isso. Não tenho qualquer obrigação de continuar disponibilizando meu trabalho para quem decide explorá-lo dessa maneira.
+Responsável pelo projeto ALBER MULTI HOUSE

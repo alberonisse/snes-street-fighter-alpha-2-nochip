@@ -1,159 +1,119 @@
-# Street Fighter Alpha 2 Definitive Edition Super Nintendo: Raubkopie-Modul, nicht kaufen
-
+# OFFENER BRIEF AN GUSTAVO FRANCO
 [Português](README.md) / [English](README.en.md) / [Español](README.es.md) / [Italiano](README.it.md) / [Deutsch](README.de.md) / [简体中文](README.zh-CN.md) / [日本語](README.ja.md) / [繁體中文（香港）](README.zh-HK.md)
 
-Dieses Projekt entstand aus einem sehr persönlichen Wunsch: **einer Community, die ich liebe, die mir unglaubliche Erlebnisse geschenkt hat und von der ich weit mehr bekommen habe, als ich je zurückgeben konnte, wenigstens ein kleines Stück zurückzugeben.**
+Bitte um Klarstellung, Berichtigung der Zuschreibung und Widerruf
 
-Nicht genehmigte Kopien dieses Projekts werden vom Shop **Retro-X Eletronics** unter `retroxeletronics.com.br` verkauft, unter dem Namen **"Street Fighter Alpha 2 Definitive Edition Super Nintendo"** und mit dem Slogan **"No Loads, No Special Chip"**. Wenn du über die Suche nach diesem Namen oder diesem Shop hier gelandet bist: Dieses Modul ist dieses Projekt, und ich habe den Verkauf nie genehmigt.
+11. November 2026
 
-**Vor allem anderen: KAUFT DIESE RAUBKOPIE-MODULE NICHT. Sie sind keine fertigen Produkte, und es gibt keine finale, fehlerfreie Version, die verkauft werden könnte.**
+Gustavo,
 
-Eines ist wichtig zu verstehen: Die erste spielbare Version wurde erst 2026 fertig, und selbst sie bekam laufend weitere Bugfixes. Die ersten Versionen waren viel zu instabil. Das wurde nie verschwiegen. Im Gegenteil, es war Teil eines offenen Entwicklungsprozesses, in dem Mitglieder der Community aktiv an den Tests teilnahmen, Probleme fanden, Bugs meldeten und halfen, Korrekturen zu bestätigen.
+Ich habe diesen Fork erstellt, nachdem du das Repository archiviert hast, weil dies der einzige schnelle und direkte Weg war, den ich gefunden habe, um zu versuchen, dir diesen Brief so bald wie möglich zukommen zu lassen.
 
-Wer also physische Module dieses Projekts verkauft, verkauft eine Entwicklungsversion, als wäre sie ein fertiges Produkt. **Nichts garantiert, dass das Modul in deinen Händen nicht genau eine dieser instabilen Versionen enthält.** Und da das Projekt offline genommen wurde, wird nie wieder eine Korrektur erscheinen: Die Bugs auf diesem Modul bleiben für immer darauf.
+Ich schreibe, um der in deinem Repository veröffentlichten Zuschreibung zu widersprechen, die die auf der Seite genannten Module als eine kommerzielle Verwertung deiner Implementierung von Street Fighter Alpha 2 ohne S-DD1 bezeichnet.
 
-**Du weißt nicht, welche Version aufgespielt wurde. Du weißt nicht, welche Korrekturen enthalten sind. Du weißt nicht, welche Bugs noch vorhanden sind. Und du kannst nicht wissen, ob das Modul überhaupt richtig funktioniert.**
+Meine Erklärung zur Herkunft der Fassung ist eindeutig: Für die USA-Fassung mit 8 MiB, Shin Akuma und beschleunigten Ladezeiten, die ich mithilfe meiner Dekomprimierung und der für den Speicher 29LV640 vorbereiteten Patches bereitgestellt habe, habe ich kein Material aus deinem Projekt verwendet. Ich erkläre, dass die Module, auf die ich mich beziehe, diese Fassung verwenden. Ich widerspreche der Zuschreibung dieser Module zu deinem Projekt, solange der tatsächlich verwendete Inhalt nicht technisch identifiziert wurde.
 
-Du kannst ein Modul kaufen und auf Glitches, Abstürze, unvollständige Funktionen oder Probleme stoßen, die in späteren Versionen bereits erkannt und behoben worden waren. Du kannst mehr bezahlen als für ein Originalspiel und etwas bekommen, das nie als Endprodukt geprüft wurde.
+Mit diesem Brief möchte ich die Herkunft der betreffenden Fassung klären, den Werdegang meiner Arbeit erläutern und darum bitten, dass die öffentliche Zuschreibung durch überprüfbare Belege gestützt wird.
 
-Und hier gibt es einen grundlegenden Unterschied: Wer das Spiel auf einem Flashcart nutzte, war Teil eines gemeinsamen Prozesses aus Entwicklung, Tests und Fehlerbehebung. Man konnte die Version aktualisieren, Korrekturen testen und direkt zur Weiterentwicklung des Projekts beitragen. Wer ein ROM auf ein Modul brennt und es zum Verkauf anbietet, bietet nichts davon.
+## 1. DER WERDEGANG MEINES PROJEKTS
 
-**Finanziert diesen Markt nicht, und verwechselt eine Entwicklungsversion nicht mit einem fertigen Spiel. Ihr zahlt womöglich viel Geld für etwas, das nie als fertiges Produkt hätte verkauft werden dürfen.**
+Meine Arbeit begann nicht erst mit der Bereitstellung der Patches für 8 MiB. Dem ging ein Prozess voraus, der das Studium des S-DD1, die Entwicklung von Werkzeugen, die Analyse des Mappings, den Zusammenbau von Platinen, Korrekturen und Tests auf echter SNES-Hardware umfasste.
 
-## Raubkopieren ist eine Straftat
+Der ursprüngliche Plan sah eine PCB mit CPLD vor, die den Datenzugriff steuern und die Einzelheiten der Implementierung schützen sollte. Ich hatte nicht vor, diese gesamte Struktur aus Dekomprimierung, Datenorganisation und Rekonstruktion offen bereitzustellen.
 
-Kopien von Spielen ohne Erlaubnis der Rechteinhaber zu verkaufen ist Piraterie, und Piraterie ist in Brasilien eine Straftat. Artikel 184, Absatz 2, des brasilianischen Strafgesetzbuchs sieht 2 bis 4 Jahre Freiheitsstrafe und eine Geldstrafe für jeden vor, der mit Gewinnabsicht eine Kopie eines Werks verkauft oder zum Verkauf anbietet, die unter Verletzung des Urheberrechts hergestellt wurde.
+Als ich von der Veröffentlichung deines Projekts erfuhr, war ich zutiefst demotiviert. Ich betrachtete das Alleinstellungsmerkmal der Arbeit, in die ich Zeit und Mühe investiert hatte, nun als gefährdet. Das war meine Wahrnehmung der Zukunft meines Projekts.
 
-Das gilt für die Spiele der Firmen, die sie entwickelt haben, und es gilt auch für meine Arbeit. Street Fighter Alpha 2 ist ein Spiel von Capcom. Die Änderungen, die die Ladezeiten entfernen und ohne den Spezialchip auskommen, sind meine Arbeit. Ich habe nie jemandem erlaubt, Module damit zu verkaufen.
+In diesem Zusammenhang beschloss ich, die Richtung zu ändern und die Dekomprimierung sowie die Patches der Fassung mit 8 MiB privat bereitzustellen, um die bereits geleistete Arbeit fortzuführen. Diese Entscheidung rechtfertigt es nicht, die von mir bereitgestellte Fassung automatisch als eine Version deines Repositorys zu bezeichnen.
 
-## Das Angebot
+## 2. WIE MEIN DEKOMPRIMIERUNGSANSATZ FUNKTIONIERT
 
-Bildschirmfoto des Angebots vom 2026-11-10 um 14:12 GMT. Die Zahlen markieren die unten aufgeführten Details. Die Logos des Shops sind leicht unscharf gemacht; der Name des Shops steht in diesem Text.
+Im ursprünglichen Kern von sdd1_unpacker habe ich die in bsnes vorhandene Implementierung des S-DD1 untersucht und isoliert. Die Urheberangaben des Codes wurden beibehalten: Andreas Naive für den ursprünglichen Algorithmus beziehungsweise die ursprüngliche Implementierung und byuu für den bsnes-Port. Ich beanspruche nicht, den S-DD1-Algorithmus erfunden zu haben.
 
-![Angebotsseite von Retro-X Eletronics mit sechs nummerierten Details](assets/evidence/overview.png)
+Dieser Code wurde zu einem C++-Werkzeug angepasst, das unabhängig von der grafischen Oberfläche und dem vollständigen Betrieb des Emulators arbeitet, mit validiertem Einlesen der ROM-Daten und Behandlung der Speicherbänke des S-DD1.
 
-1. Titel: "Street Fighter Alpha 2 Definitive Edition Super Nintendo", gefolgt von "No Loads, No Special Chip".
+Das Spiel behandelt nicht die gesamte ROM als eine einzige komprimierte Datei. Es fordert bestimmte Datenströme an, normalerweise während DMA-Übertragungen. Deshalb umfasste die Arbeit die Analyse von Deskriptoren und Tabellen der ursprünglichen ROM, die Aufzeichnung von während der Ausführung gestellten Requests und die Zusammenführung von Herkunft, Größe und Konfiguration der Speicherbänke.
 
-   ![Titel und Preisspanne des Angebots](assets/evidence/1-title-price.png)
+Der kanonische Trace der historischen Rekonstruktion enthält 3.155 Request-Identitäten in 3.160 Zeilen. Die fünf zusätzlichen Zeilen halten Belege für weitere Aufrufstellen bereits katalogisierter Requests fest. Beobachtete Requests und statisch abgeleitete Einträge werden getrennt klassifiziert; diese Zählung bedeutet weder 3.155 unterschiedliche komprimierte Datenströme noch beweist sie für sich genommen die Abdeckung aller Spielsituationen.
 
-2. Preis: von R$ 200,00 bis R$ 250,00. Das "Produto completo com caixa, berço e manual", das komplette Set mit Schachtel, Einlage und Anleitung, kostet R$ 250,00, mit "7 dias para trocas e devoluções e 3 meses de garantia": 7 Tage Rückgaberecht und 3 Monate Garantie.
+Die Verarbeitungskette des ursprünglichen Kerns war wie folgt aufgebaut: ursprüngliche USA-ROM, Analyse und Traces, Request-Katalog, Dekomprimierung der Daten, Anordnung in einem neuen Layout, DMA-Patches und Überprüfungen der Rekonstruktion ohne S-DD1.
 
-   ![Das komplette Set für R$ 250,00 mit dem Versprechen von 7 Tagen Rückgabe und 3 Monaten Garantie](assets/evidence/2-buy-box.png)
+Diese Rekonstruktion erforderte es, zwischen CPU-Adresse und Offset in der Datei zu unterscheiden, die ROM-Bereiche des SNES zu beachten und die bearbeiteten Routinen auf bereits dekomprimierte Daten umzuleiten. Sie lässt sich nicht darauf reduzieren, die Datei zu vergrößern oder ihren Header zu ändern.
 
-3. Schachtel: Auf der Vorderseite steht "The Definitive Edition, No Loading Times & More on Super NES!".
+## 3. DIE ANPASSUNG AUF 8 MiB UND DIE EINFACHE PLATINE
 
-   ![Vorderseite der Schachtel mit dem Satz The Definitive Edition, No Loading Times & More on Super NES!](assets/evidence/3-box.png)
+Die Entwicklungslinie mit 8 MiB ist vom vorherigen Rekonstruktionskern mit 16 MiB zu unterscheiden. Sie durchlief einen anderen Organisations- und Zuordnungsprozess, bei dem ein Inventar verwendet wurde, das aus der von mir getesteten und auf YouTube gezeigten 16mb-Basis gewonnen wurde, sowie spätere Korrekturen und Überprüfungen. Ich stelle sie nicht als einen einfachen Ausschnitt aus der Datei mit 16 MiB dar.
 
-4. Modul: Auf dem Etikett stehen der Code `SNS-AUZE-USA` und "Made in Japan". Kein Modul dieses Projekts wurde je in Japan hergestellt. Derselbe Code steht auf der Anleitung.
+Die Fassung wurde für eine einfache Platine mit den entsprechenden Verbindungen und einem einzigen TSOP48-Flash-Speicher mit 8 MiB vorbereitet, dem 29LV640 im x8-Modus. Diese Fassung benötigt in dieser Konfiguration weder S-DD1 noch CPLD und wurde auf echter SNES-Hardware getestet. Auch die Variante für eine modifizierte LoROM-Platine wurde vorbereitet.
 
-   ![Modul-Etikett mit SNS-AUZE-USA und Made in Japan](assets/evidence/4-cartridge.png)
+Es besteht ein objektiver Unterschied zu der in deinem Projekt dokumentierten historischen Konvertierung mit 12 MiB. Dieses Image mit 12 MiB kann nicht einfach auf den 29LV640 mit 8 MiB geschrieben und in der von mir vorgeführten Konfiguration verwendet werden. Dein eigener technischer Bericht beschreibt ein spezifisches Mapping, einschließlich eines Fensters in den Bänken C0-FF:
 
-5. Hinweis auf den Fotos: "Jogo totalmente compatível com videogame bloqueado e desbloqueado", portugiesisch für "Spiel voll kompatibel mit gesperrten und entsperrten Konsolen".
+https://github.com/snes9xgit/snes9x/issues/1081
 
-   ![Hinweis auf den Fotos, der Kompatibilität mit gesperrten und entsperrten Konsolen verspricht](assets/evidence/5-compatibility.png)
+Ich behaupte nicht, dass deine Implementierung niemals für ein physisches Modul angepasst werden könnte, und bestreite auch nicht die Hardwaretests, die du dokumentiert hast. Ich unterscheide ein Image mit 12 MiB und dessen Mapping von der Fassung mit 8 MiB, die für meine Platinenkonfiguration vorbereitet wurde.
 
-6. Optionen: "Completo", das komplette Set, oder "Apenas Cartucho", nur das Modul, mit kostenpflichtigen Extras: Schutzhülle für die Schachtel, holografische Veredelung, Staubschutz und ein A3-Poster.
+Wenn das Ziel darin besteht, den Zugang zum Spiel zu erweitern, halte ich es für wichtig, auch diesen Weg anzuerkennen: Menschen die Nutzung einer einfachen Platine und zugänglicher Bauteile zu ermöglichen, ohne ein bestimmtes Flashcart kaufen zu müssen. Ich hatte bereits eine bei dieser Arbeit verwendete Testplatine dokumentiert; das Video ist in der Liste am Ende dieses Briefes aufgeführt.
 
-   ![Optionen des Angebots und kostenpflichtige Extras](assets/evidence/6-options.png)
+## 4. URHEBERANGABEN UND GENAUIGKEIT
 
-7. Beschreibung, weiter unten auf der Seite: Sie bewirbt die "eliminação dos tempos de carregamento antes das lutas", das Entfernen der Ladezeiten vor den Kämpfen, und ein "ROM expandida que dispensa o chip especial S-DD1", ein erweitertes ROM, das ohne den Spezialchip S-DD1 auskommt. Genau das macht dieses Projekt.
+Der vorliegende Widerspruch bezieht sich ausdrücklich auf die USA-Fassung mit 8 MiB, die in den genannten Modulen verwendet wird. Die Herkunft dieser Fassung muss anhand der tatsächlich verwendeten Dateien, ihrer Patches und ihrer Provenienz untersucht werden. Sie darf weder aus Inventaren einer anderen Region oder aus separaten Forschungsrevisionen noch aus der bloßen Ähnlichkeit der beworbenen Funktionen abgeleitet werden.
 
-   ![Beschreibung des Angebots, die das Entfernen der Ladezeiten und ein ROM ohne den S-DD1-Chip bewirbt](assets/evidence/7-description.png)
+Ich beanspruche keine ausschließliche Urheberschaft am öffentlichen Algorithmus, an Routinen Dritter oder an den Daten des ursprünglichen Spiels. Ich beanspruche die korrekte Anerkennung der Integrations-, Anpassungs-, Korrektur- und Validierungsarbeit, die an der von mir bereitgestellten Fassung geleistet wurde.
 
-Dasselbe Produkt kann in anderen Shops, auf Mercado Livre, auf Shopee oder in Facebook-Gruppen unter einem anderen Namen auftauchen. Die Details 3, 4 und 5 erkennen das Modul in jedem Angebot.
+## 5. ÖFFENTLICHE AUFZEICHNUNGEN ZUR ÜBERPRÜFUNG DER CHRONOLOGIE
 
-**"Definitive Edition" ist ein Name, den sich der Verkäufer ausgedacht hat. Eine endgültige Edition dieses Projekts hat es nie gegeben: Als es offline genommen wurde, bekam es noch Korrekturen.**
+Ich lege die folgenden Aufzeichnungen vor, damit ihr Inhalt und ihre Veröffentlichungsdaten mit der Versionsgeschichte abgeglichen werden können. Sie dokumentieren den von mir geschilderten Werdegang; sie ersetzen nicht den Vergleich der tatsächlich im Modul verwendeten Dateien.
 
-### Aufnahmeprotokoll
+Einfache Testplatine:
+https://www.youtube.com/shorts/EVQoQB8mD1A
 
-| Feld | Wert |
-|---|---|
-| Shop | Retro-X Eletronics |
-| Adresse | `https://retroxeletronics.com.br/produto/street-fighter-alpha-2-definitive-edition-super-nintendo-no-loads-no-special-chip/` |
-| Datum | 2026-11-10 14:12:34 GMT |
-| Methode | Headless Chromium, Fenster 1440x900, Skalierung 2 |
-| SHA-256 des Bildschirmfotos | `cb085b0749899e7b31aa1b2e0bdc4faa991862e6fd337b7d5cc7c3544cc0ca78` |
-| SHA-256 der ganzen Seite | `6494f6917982b36425032cfd3b15095de6822c12948f93118a1e76707c5045e3` |
-| SHA-256 des Seiten-PDFs | `bf64a3c0718ca29ca92989778df28a546d0163fb65ea0f9b73430b114ed9dee5` |
+Ergänzende Aufzeichnung 1:
+https://www.youtube.com/shorts/uhzHfQFPbVw
 
-Die Originaldateien, ohne Unschärfe und mit diesen Prüfsummen, liegen bei mir.
+Ergänzende Aufzeichnung 2:
+https://www.youtube.com/shorts/23gS_IEGDqc
 
-## Häufige Fragen
+Sendung zum Projekt:
+https://www.youtube.com/live/zakojPNeGc0
 
-### Ist dieses Modul offiziell oder genehmigt?
+Ergänzende Aufzeichnung 3:
+https://www.youtube.com/shorts/PXVAKPfAO1E
 
-Nein. Ich habe nie einem Shop erlaubt, Module dieses Projekts zu verkaufen.
+Ergänzende Aufzeichnung 4:
+https://www.youtube.com/shorts/y8PAzIzPz1I
 
-### Gibt es eine "Definitive Edition" dieses Projekts?
+Ergänzende Aufzeichnung 5:
+https://www.youtube.com/shorts/bStb8AW_QzQ
 
-Nein. Diesen Namen hat sich der Verkäufer ausgedacht.
+Ergänzende Aufzeichnung 6:
+https://www.youtube.com/shorts/if26BECUllI
 
-### Bekommt das Modul Updates?
+Phase mit PCB und CPLD:
+https://www.youtube.com/shorts/X-Hby6Vw-m4
 
-Nein. Das Projekt wurde offline genommen, und es wird keine neuen Versionen geben. Die Bugs auf dem Modul bleiben für immer darauf.
+Video, das ich vor der Vorbereitung und der privaten Weitergabe der Patches für 8 MiB veröffentlicht habe:
+https://www.youtube.com/shorts/YZbpycbEW0w
 
-### Kann der Verkäufer die Bugs beheben?
+Spätere Vorführung des Spiels auf einer einfachen Platine mit dem 29LV640:
+https://www.youtube.com/shorts/GKl1eOMFks0
 
-Es gibt keine Quelle mehr, aus der eine Korrektur kommen könnte. Die Korrekturen entstanden in der offenen Entwicklung dieses Projekts, und die ist beendet.
+Meine an dich gerichtete Klarstellung:
+https://youtu.be/8X8jRSXFb5I
 
-### Welche Version ist auf dem Modul?
+## 6. WORUM ICH BITTE
 
-Das lässt sich aus dem Angebot nicht erkennen. Es kann jede sein, auch eine der ersten, die viel zu instabil waren.
+Die Veröffentlichung, auf die ich mich beziehe, befindet sich unter:
+https://github.com/gufranco/snes-street-fighter-alpha-2-nochip
 
-### Ich habe schon eins gekauft. Was kann ich tun?
+Ich bitte dich zu erläutern, welche Datei untersucht wurde, welchen Hash sie hat, aus welchem Modul sie gewonnen wurde und welche technischen Anhaltspunkte die Zuschreibung zu deiner Implementierung gestützt haben.
 
-Wenn du es in Brasilien online gekauft hast, gibt dir Artikel 49 des brasilianischen Verbraucherschutzgesetzes, des Código de Defesa do Consumidor, das Recht, innerhalb von 7 Tagen nach Erhalt zu widerrufen, mit voller Erstattung. Das Angebot selbst verspricht "7 dias para trocas e devoluções", 7 Tage Rückgaberecht. Wie du Anzeige erstattest, steht unten.
+Ich bitte außerdem darum, dass der Vergleich das physische Mapping, die Routinen, die Patches und die konkrete Revision berücksichtigt, anstatt nur die kommerzielle Beschreibung oder das Vorhandensein von Funktionen wie Shin Akuma und beschleunigten Ladezeiten als Beweis zu nehmen.
 
-## Wie du Anzeige erstattest
+Solange diese Identifizierung umstritten bleibt und kein technischer Nachweis vorgelegt wurde, bitte ich darum, dass die Veröffentlichung diesen Umstand ausdrücklich kenntlich macht und die kategorische Zuschreibung entfernt. Sollte sich der Irrtum bestätigen, bitte ich um die Berichtigung der Veröffentlichungen und einen öffentlichen Widerruf mit einer Sichtbarkeit, die der ursprünglichen Darstellung entspricht.
 
-Wenn du eines dieser Module gekauft hast und dich betrogen fühlst, oder wenn du dieses Projekt wegen dieses Handels verloren hast, kannst und solltest du es melden. Sichere vorher das Angebot, den Zahlungsbeleg, die Nachrichten mit dem Verkäufer und Fotos des Produkts.
+Ich respektiere deine Arbeit und bitte dich, auch meine zu respektieren. Ich beabsichtige weder, persönliche Angriffe zu fördern, noch deinen Einsatz herabzusetzen.
 
-### In Brasilien
+Die Frage, die ich aufwerfe, ist sachlicher Natur: Die Herkunft einer Implementierung muss nachgewiesen werden. Ein ähnliches Ergebnis, ein Name in einer Verkaufsanzeige oder eine Verpackung ersetzen nicht die Analyse des tatsächlich verwendeten Inhalts.
 
-- Polizei: Erstatte Anzeige, einen boletim de ocorrência, auf einer Polizeiwache oder über die Online-Wache deines Bundesstaats. Der Verkauf von Raubkopien ist nach Artikel 186 des Strafgesetzbuchs ein Offizialdelikt: Jeder kann es melden, auch ohne etwas gekauft zu haben.
-- Verbraucherschutz: Reiche eine Beschwerde beim Procon deines Bundesstaats und auf [consumidor.gov.br](https://www.consumidor.gov.br) ein. Wenn du online gekauft hast, verlange die Erstattung innerhalb von 7 Tagen nach Erhalt, nach Artikel 49 des Verbraucherschutzgesetzes.
-- Zahlung: Wenn du mit Karte bezahlt hast, bitte die ausgebende Bank, die Zahlung zurückzubuchen.
-- Plattformen: Melde das Angebot als Verkauf eines Raubkopie-Produkts auf Mercado Livre, Shopee, Instagram, Facebook oder wo immer es auftaucht.
-- Rechteinhaber: Informiere Capcom, der das Spiel gehört, über die offiziellen Kanäle.
+Mit freundlichen Grüßen
 
-### Außerhalb Brasiliens
-
-- Wende dich an die Verbraucherschutzbehörde deines Landes und gib an, dass du bei einem brasilianischen Shop gekauft hast.
-- Wenn du mit Karte oder PayPal bezahlt hast, eröffne einen Konflikt beim Kartenaussteller oder bei PayPal.
-- Melde das Angebot auf der Plattform, auf der es erscheint.
-- Wo Raubkopieren strafbar ist, erstatte Anzeige bei der örtlichen Polizei.
-- Informiere Capcom über die offiziellen Kanäle.
-
-## Warum das Projekt offline genommen wurde
-
-Es waren sechs Jahre Arbeit, vom Beginn der Pandemie im Jahr 2020 bis zur Fertigstellung der ersten spielbaren Version im Jahr 2026. Sechs Jahre Recherche, Entwicklung, Experimente und unzählige Stunden, investiert in etwas, das nie darauf ausgelegt war, Gewinn zu erzielen. Es war ein Beitrag, den ich geleistet habe, weil ich es wollte, weil ich an die Community geglaubt habe und weil ich etwas wirklich Nützliches liefern wollte.
-
-Eines möchte ich ganz klar sagen: **Dieses Projekt wurde nie geschaffen, um den Markt der kommerziellen Piraterie zu bedienen.** Und erst recht nicht, um denjenigen als Werkzeug zu dienen, die die Arbeit anderer zum Geschäft machen und unautorisierte Kopien von Spielen unter dem bequemen Euphemismus "Reproduktionen" verkaufen.
-
-Wir kennen diesen Markt. Produkte von zweifelhafter Qualität, oft teurer verkauft als Originalexemplare, die gerade die Leidenschaft einer Community ausnutzen, die Respekt verdient hätte.
-
-Das Projekt war immer vollständig Open Source, einschließlich seines Toolkits. Sein Zweck war einfach und technisch sehr spezifisch: Die Spiele sollten auf erschwinglichen Flashcarts laufen, mit allen Verbesserungen, die ich entwickeln konnte, ohne zusätzliche Hardware, proprietäre Geräte oder irgendeine FPGA-basierte Lösung.
-
-**Und genau das habe ich geliefert.**
-
-Der Verhaltenskodex war nicht zufällig da. Er existierte genau dafür, Grenzen zu setzen, die Community zu schützen und klarzustellen, welche Art der Nutzung ich für akzeptabel hielt.
-
-Leider gibt es Berichte und Beweise dafür, dass meine Arbeit in Brasilien ohne Genehmigung verkauft wird, getarnt unter dem bequemen Etikett "Reproduktionsmodule".
-
-Wer das tut, gehört genau zu den Leuten, denen dieses Projekt nie nützen sollte. Menschen, die nichts zur Entwicklung beigetragen, die Nutzungsbedingungen nicht respektiert und in der Arbeit eines anderen nur eine Gelegenheit gesehen haben, Geld zu verdienen.
-
-Deshalb habe ich eine Entscheidung getroffen: Das Projekt wurde offline genommen. Es wird keinen Support, keine neuen Veröffentlichungen und keine Releases mehr geben. Das gilt auch für Material, das bereits fertig war und nach den letzten Tests nur noch auf die Veröffentlichung wartete.
-
-Ich werde nicht weiter meine Zeit, mein Wissen und meine Arbeit investieren, nur um am Ende kostenlos Rohmaterial für einen Markt zu liefern, der den Prinzipien, aus denen dieses Projekt entstanden ist, grundlegend widerspricht.
-
-Es ist zutiefst enttäuschend, nach sechs Jahren Hingabe an diesem Punkt anzukommen. Aber meine Bereitschaft, etwas zur Community beizutragen, bedeutet nicht, dass ich verpflichtet bin, die kommerzielle Ausbeutung meiner Arbeit hinzunehmen.
-
-**Meine Arbeit wurde der Community geschenkt. Nicht dem Markt für raubkopierte Module. Verwechselt Großzügigkeit nicht mit der Erlaubnis, die Arbeit anderer auszubeuten.**
-
-An alle, die positiv beigetragen, Wissen geteilt und die ursprüngliche Idee respektiert haben: mein aufrichtiger Dank.
-
-Was diejenigen betrifft, die beschlossen haben, daraus ein Geschäft zu machen: Ich hoffe, ihr versteht, dass eure Entscheidungen Konsequenzen haben.
-
-**Bedankt euch bei denen, die beschlossen haben, einen kostenlosen Beitrag für die Community in ein Geschäft mit Raubkopien zu verwandeln. Ihr wisst, wer ihr seid.**
-
-Ich weiß, wie viel Zeit ich hineingesteckt habe. Ich weiß, was ich geliefert habe, und vor allem weiß ich, warum ich es getan habe. Ich habe keinerlei Verpflichtung, meine Arbeit weiterhin denen zur Verfügung zu stellen, die sich entscheiden, sie auf diese Weise auszubeuten.
+Projektverantwortlicher von ALBER MULTI HOUSE
